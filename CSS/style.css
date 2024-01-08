@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
+html, body {margin: 0; height: 100%; overflow: hidden}
 
 #progessbar { position:absolute; width:700px; height:23px; top:208px; left:127px; background-color: #ddceb6; border-radius:20px; box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);}
 #barloading { width: 0%; height: 23px; background-color: #be9c3f; border-radius:20px}
