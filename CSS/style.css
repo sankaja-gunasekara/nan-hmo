@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#progessbar { position:absolute; width:700px; height:23px; top:208px; left:127px; background-color: #ddceb6; border-radius:20px; box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);}
+#barloading { width: 0%; height: 23px; background-color: #be9c3f; border-radius:20px}
+
+#puzzlebox1 { position:absolute; top:319px; left:87px;}
+#puzzlebox2 { position:absolute; top:408px; left:87px;}
+#puzzlebox3 { position:absolute; top:497px; left:87px;}
+#puzzlebox4 { position:absolute; top:586px; left:87px;}
+#puzzlebox5 { position:absolute; top:319px; right:115px;}
+#puzzlebox6 { position:absolute; top:408px; right:115px;}
+#puzzlebox7 { position:absolute; top:497px; right:115px;}
+#puzzlebox8 { position:absolute; top:586px; right:115px;}
+
+#drop1 {position:absolute; width:126px; height:67px; top:278px; left:495px;}
+
+#drop2 {position:absolute; width:126px; height:67px; top:394px; left:448px;}
+#drop3 {position:absolute; width:126px; height:67px; top:394px; left:556px;}
+
+#drop4 {position:absolute; width:126px; height:67px; top:501px; left:448px;}
+#drop5 {position:absolute; width:126px; height:67px; top:501px; left:556px;}
+
+#drop6 {position:absolute; width:126px; height:67px; top:611px; left:395px;}
+#drop7 {position:absolute; width:126px; height:67px; top:611px; left:505px;}
+#drop8 {position:absolute; width:126px; height:67px; top:611px; left:614px;}

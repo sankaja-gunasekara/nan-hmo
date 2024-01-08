@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	outline:none;
+}
+
+article, footer, header, section
+{
+	display: block;
+}
+
+body {
+	margin:0px;
+	padding:0px;
+	color:#007dc5;
+	
+}
+/*Bacgrounds*/
+
+
+.bg2{margin:0 auto; position:relative; width:1024px; height:768px;}
+
+/* New Animation */
+.slides
+{
+	height:768px;
+	width:1024px;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:0 0 0 0;
+	text-align:center;
+}
+
+/* Body CSS Starts */
+.wrapper
+{
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden
+}
+
+
+
+/* Pge Loading*/
+#dvLoading
+{
+	background:#fff;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+ 
+.scrollcontent1-bar { width: 5px; background: #00ace3; overflow: hidden; }
+.scrollcontent1-drag { background: #fff; cursor: pointer;}
+	
+	
+/*All slide*/
+
+.allwraper
+{
+ width:100%;
+ height:100%;	
+}

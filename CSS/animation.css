@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+{ 
+-webkit-animation: fadeInLeft 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:fadeInLeft 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: fadeInLeft 1s;
+    -o-animation-iteration: infinite;
+}
+
+{ 
+-webkit-animation: fadeInRight 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:fadeInRight 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: fadeInRight 1s;
+    -o-animation-iteration: infinite;
+}
+
+
+{ 
+-webkit-animation: fadeInDown 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:fadeInDown 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: fadeInDown 1s;
+    -o-animation-iteration: infinite;
+}
+
+{ 
+-webkit-animation: fadeInUp 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:fadeInUp 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: fadeInUp 1s;
+    -o-animation-iteration: infinite;
+}
+
+{ 
+-webkit-animation: fadeInLeftBig 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:fadeInDownBig 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: fadeInDownBig 1s;
+    -o-animation-iteration: infinite;
+}
+
+{ 
+-webkit-animation: fadeInRightBig 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:fadeInUpBig 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: fadeInUpBig 1s;
+    -o-animation-iteration: infinite;
+}
+
+
+{ 
+-webkit-animation: lightSpeedIn 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:lightSpeedIn 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: lightSpeedIn 1s;
+    -o-animation-iteration: infinite;
+}
+
+{ 
+-webkit-animation: bounceIn 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:bounceIn 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: bounceIn 1s;
+    -o-animation-iteration: infinite;
+}
+
+{ 
+-webkit-animation: bounceInLeft 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:bounceInLeft 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: bounceInLeft 1s;
+    -o-animation-iteration: infinite;
+}
+
+{ 
+-webkit-animation: bounceInRight 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:bounceInRight 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: bounceInRight 1s;
+    -o-animation-iteration: infinite;
+}
+
+{ 
+-webkit-animation: bounceInDown 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:bounceInDown 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: bounceInDown 1s;
+    -o-animation-iteration: infinite;
+}
+
+{ 
+-webkit-animation: bounceInUp 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:bounceInUp 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: bounceInUp 1s;
+    -o-animation-iteration: infinite;
+}
+
+
+{ 
+-webkit-animation: flipInY 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:flipInY 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: flipInY 1s;
+    -o-animation-iteration: infinite;
+}
+
+{ 
+-webkit-animation: flipInX 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:flipInX 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: flipInX 1s;
+    -o-animation-iteration: infinite;
+}
+
+{ 
+-webkit-animation: zoomeIn 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:zoomeIn 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: zoomeIn 1s;
+    -o-animation-iteration: infinite;
+}
+
+{ 
+-webkit-animation: rotateIn 2s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:rotateIn 2s;
+    -moz-animation-iteration: infinite;
+    -o-animation: rotateIn 2s;
+    -o-animation-iteration: infinite;
+}
+
+{ 
+-webkit-animation: rollIn 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:rollIn 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: rollIn 1s;
+    -o-animation-iteration: infinite;
+}
+
+{ 
+-webkit-animation: pulse 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation:pulse 1s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: pulse 1s;
+    -o-animation-iteration-count: infinite;
+}
+
+{
+-webkit-animation: blink 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 1s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 1s;
+    -o-animation-iteration-count: infinite;
+}
+
+{
+-webkit-animation: flash 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: flash 1s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: flash 1s;
+    -o-animation-iteration-count: infinite;
+}
+
+
+{
+-webkit-animation: bounceOut 1s;
+    -webkit-animation-iteration: infinite;
+    -moz-animation:bounceOut 1s;
+    -moz-animation-iteration: infinite;
+    -o-animation: bounceOut 1s;
+    -o-animation-iteration: infinite;
+}
+
+
+ 
