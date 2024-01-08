@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+        <head>
+		<title></title>
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="CSS/stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="CSS/style.css" rel="stylesheet" type="text/css" />  
+        <link href="CSS/animate.css" rel="stylesheet" type="text/css" />
+        <link href="CSS/animation.css" rel="stylesheet" type="text/css" />    
+		<link rel="stylesheet" href="CSS/sweetalert.css">
+        <script src="Scripts/jquery-1.9.1.js"  type="text/javascript"></script>
+        <script src="Scripts/jquery.jsmovie.1.4.1.min.js"  type="text/javascript"></script>
+		<script src="Scripts/animation.js" type="text/javascript"></script>
+        <script src="Scripts/sweetalert-dev.js"></script>
+        <style>
+        #divToScroll
+        {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        top:25px;
+        left:25px;
+        }
+        </style>
+        
+</head>
+	<body style="background:none;" class="coda-slider-no-js">
+	 <section class="wrapper">
+
+        <article class="slides bg2" style=" overflow:hidden; background:url(Images/background.jpg) no-repeat">
+			
+			<div id="progessbar">
+				<div id="barloading"></div>
+			</div>
+
+              <div id="puzzlebox1"><img id="1" draggable="true" ondragstart="drag(event)" src="Images/puzzle-1.png"/></div>
+              <div id="puzzlebox2"><img id="2" draggable="true" ondragstart="drag(event)" src="Images/puzzle-2.png"/></div>
+              <div id="puzzlebox3"><img id="3" draggable="true" ondragstart="drag(event)" src="Images/puzzle-3.png"/></div>
+              <div id="puzzlebox4"><img id="4" draggable="true" ondragstart="drag(event)" src="Images/puzzle-4.png"/></div>
+              <div id="puzzlebox5"><img id="5" draggable="true" ondragstart="drag(event)" src="Images/puzzle-5.png"/></div>
+              <div id="puzzlebox6"><img id="6" draggable="true" ondragstart="drag(event)" src="Images/puzzle-6.png"/></div>
+              <div id="puzzlebox7"><img id="7" draggable="true" ondragstart="drag(event)" src="Images/puzzle-7.png"/></div>
+              <div id="puzzlebox8"><img id="8" draggable="true" ondragstart="drag(event)" src="Images/puzzle-8.png"/></div>
+				
+			
+			  <!--dropboxes-->
+				<div id="dropbox">
+					<div id="drop1" ondrop="drop(event, ['2'], '1')" ondragover="allowDrop(event)"></div>
+					
+					<div id="drop2" ondrop="drop(event, ['1','5','6'], '2')" ondragover="allowDrop(event)"></div>
+					<div id="drop3" ondrop="drop(event, ['1','5','6'], '3')" ondragover="allowDrop(event)"></div>
+					
+					<div id="drop4" ondrop="drop(event, ['7','8'], '4')" ondragover="allowDrop(event)"></div>
+					<div id="drop5" ondrop="drop(event, ['7','8'], '5')" ondragover="allowDrop(event)"></div>
+					
+					<div id="drop6" ondrop="drop(event, ['1','5','3','4'], '6')" ondragover="allowDrop(event)"></div>
+					<div id="drop7" ondrop="drop(event, ['1','5','3','4'], '7')" ondragover="allowDrop(event)"></div>
+					<div id="drop8" ondrop="drop(event, ['1','5','3','4'], '8')" ondragover="allowDrop(event)"></div>
+				</div>
+			
+        </article>
+		 
+		 
+		 
+        <!--SLIDE 2-->
+        <article class="slides bg2" style=" overflow:hidden; background:url(Images/slide2.png) no-repeat" id="block2"></article>
+           
+  		 <script>
+			 
+			//Countpuzzleanswer
+			var count = 0;
+			var draggedItems = [];
+			var puzzleLocation = new Array(8).fill(0);
+			 
+			function drag(e) {
+				// save the id of the element being dragged
+				e.dataTransfer.setData("text", e.target.id);
+				}
+			function allowDrop(e){
+					e.preventDefault();
+				}
+			 
+//			function drop(e, allowId){
+//					e.preventDefault();
+//
+//					 var id = e.dataTransfer.getData("Text")
+//					 if (id==allowId) {
+//						 var droppedImg = document.getElementById(id);
+//						 e.target.appendChild(droppedImg);
+//						 count++;
+//						 
+//						 if(count == 8){
+//							 alert("Perfect !!!", "Click Ok to go to the Next Level");
+//							 setTimeout(function(){ window.location.href = 'Level-2.html'; }, 2000);
+//						 }
+//					 }
+//					 else {
+//						alert('Please Try Again');
+//					 }
+//		    	}
+			
+			 
+			 function drop(e, allowIds, dropLocation){
+				e.preventDefault();
+				var updated = false;
+				var id = e.dataTransfer.getData("Text")
+					 
+				for (let i = 0; i < allowIds.length; i++) {
+  					if (id==allowIds[i]) {
+						
+						updated = true;
+						
+						if(!puzzleLocation.includes(dropLocation)){
+							puzzleLocation[id] = dropLocation;
+							var droppedImg = document.getElementById(id);
+							e.target.appendChild(droppedImg);
+						
+							if(!draggedItems.includes(id)){
+								draggedItems.push(id);
+						 		count++;
+
+						 		var elem = document.getElementById("barloading");
+						  		var width = count/8*100;
+						  		elem.style.width = width + '%';
+								
+								if(count == 8){
+					 				//alert("Perfect !!!", "Click Ok to go to the Next Level");
+					 				setTimeout(function(){ $("#block2").fadeIn('fast'); }, 1000);
+								}
+							}
+						} else {
+							swal("Please choose an empty spot.");
+						}
+						
+						break;
+					 }
+				}
+					
+				if(!updated){
+					swal("Oops! That doesn't seem to be the right spot.");
+				}
+					
+		    }
+			 
+
+
+  function allowDrop(event) {
+    event.preventDefault();
+  }
+			 
+		 </script> 
+		 
+		 
+    </section>
+		
+	</body>
+</html>		
+		
