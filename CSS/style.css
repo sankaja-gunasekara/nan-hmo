@@ -9,10 +9,14 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 #puzzlebox2 { position:absolute; top:408px; left:87px;}
 #puzzlebox3 { position:absolute; top:497px; left:87px;}
 #puzzlebox4 { position:absolute; top:586px; left:87px;}
-#puzzlebox5 { position:absolute; top:319px; right:115px;}
+#puzzlebox5 { position:absolute; top:319px; left:782px;}
+#puzzlebox6 { position:absolute; top:408px; left:782px;}
+#puzzlebox7 { position:absolute; top:497px; left:782px;}
+#puzzlebox8 { position:absolute; top:586px; left:782px;}
+/* #puzzlebox5 { position:absolute; top:319px; right:115px;}
 #puzzlebox6 { position:absolute; top:408px; right:115px;}
 #puzzlebox7 { position:absolute; top:497px; right:115px;}
-#puzzlebox8 { position:absolute; top:586px; right:115px;}
+#puzzlebox8 { position:absolute; top:586px; right:115px;} */
 
 #drop1 {position:absolute; width:126px; height:67px; top:278px; left:495px;}
 
