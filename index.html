@@ -26,40 +26,40 @@
         </style>
         
 </head>
-	<body style="background:none;" class="coda-slider-no-js">
+	<body style="background:none;" class="coda-slider-no-js" >
 	 <section class="wrapper">
 
-        <article class="slides bg2" style=" overflow:hidden; background:url(Images/background.jpg) no-repeat">
+        <article id="frame" class="slides bg2" style=" overflow:hidden; background:url(Images/background.jpg) no-repeat">
 			
 			<div id="progessbar">
 				<div id="barloading"></div>
 			</div>
 
-<!-- 	      <div id="puzzlebox1" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)"><img id="1" draggable="true" ondragstart="drag(event)" src="Images/puzzle-1.png" style="cursor: pointer;"/></div> -->
-              <div id="puzzlebox1"><img id="1" draggable="true" ondragstart="drag(event)" src="Images/puzzle-1.png" style="cursor: pointer;"/></div>
-              <div id="puzzlebox2"><img id="2" draggable="true" ondragstart="drag(event)" src="Images/puzzle-2.png" style="cursor: pointer;"/></div>
-              <div id="puzzlebox3"><img id="3" draggable="true" ondragstart="drag(event)" src="Images/puzzle-3.png" style="cursor: pointer;"/></div>
-              <div id="puzzlebox4"><img id="4" draggable="true" ondragstart="drag(event)" src="Images/puzzle-4.png" style="cursor: pointer;"/></div>
-              <div id="puzzlebox5"><img id="5" draggable="true" ondragstart="drag(event)" src="Images/puzzle-5.png" style="cursor: pointer;"/></div>
-              <div id="puzzlebox6"><img id="6" draggable="true" ondragstart="drag(event)" src="Images/puzzle-6.png" style="cursor: pointer;"/></div>
-              <div id="puzzlebox7"><img id="7" draggable="true" ondragstart="drag(event)" src="Images/puzzle-7.png" style="cursor: pointer;"/></div>
-              <div id="puzzlebox8"><img id="8" draggable="true" ondragstart="drag(event)" src="Images/puzzle-8.png" style="cursor: pointer;"/></div>
-				
-			
-			  <!--dropboxes-->
-				<div id="dropbox">
-					<div id="drop1" ondrop="drop(event, ['2'], '1')" ondragover="allowDrop(event)"></div>
-					
-					<div id="drop2" ondrop="drop(event, ['1','5','6'], '2')" ondragover="allowDrop(event)"></div>
-					<div id="drop3" ondrop="drop(event, ['1','5','6'], '3')" ondragover="allowDrop(event)"></div>
-					
-					<div id="drop4" ondrop="drop(event, ['7','8'], '4')" ondragover="allowDrop(event)"></div>
-					<div id="drop5" ondrop="drop(event, ['7','8'], '5')" ondragover="allowDrop(event)"></div>
-					
-					<div id="drop6" ondrop="drop(event, ['1','5','3','4'], '6')" ondragover="allowDrop(event)"></div>
-					<div id="drop7" ondrop="drop(event, ['1','5','3','4'], '7')" ondragover="allowDrop(event)"></div>
-					<div id="drop8" ondrop="drop(event, ['1','5','3','4'], '8')" ondragover="allowDrop(event)"></div>
-				</div>
+			<!--dropboxes-->
+			<div id="dropbox">
+				<div id="drop1" ondrop="drop(event, ['2'], '1')" ondragover="allowDrop(event)"></div>
+
+				<div id="drop2" ondrop="drop(event, ['1','5','6'], '2')" ondragover="allowDrop(event)"></div>
+				<div id="drop3" ondrop="drop(event, ['1','5','6'], '3')" ondragover="allowDrop(event)"></div>
+
+				<div id="drop4" ondrop="drop(event, ['7','8'], '4')" ondragover="allowDrop(event)"></div>
+				<div id="drop5" ondrop="drop(event, ['7','8'], '5')" ondragover="allowDrop(event)"></div>
+
+				<div id="drop6" ondrop="drop(event, ['1','5','3','4'], '6')" ondragover="allowDrop(event)"></div>
+				<div id="drop7" ondrop="drop(event, ['1','5','3','4'], '7')" ondragover="allowDrop(event)"></div>
+				<div id="drop8" ondrop="drop(event, ['1','5','3','4'], '8')" ondragover="allowDrop(event)"></div>
+			</div>
+
+ 
+			<div id="puzzlebox1" ontouchstart="touchStart(event,this)" ontouchmove="touchmove(event, this)" ontouchend='touchend(event, this, ["#drop2","#drop3","#drop6","#drop7","#drop8"], 1)'><img id="1" draggable="true" ondragstart="drag(event)" src="Images/puzzle-1.png"/></div>
+			<div id="puzzlebox2" ontouchstart="touchStart(event,this)" ontouchmove="touchmove(event, this)" ontouchend='touchend(event, this, ["#drop1"], 2)'><img id="2" draggable="true" ondragstart="drag(event)" src="Images/puzzle-2.png"/></div>
+			<div id="puzzlebox3" ontouchstart="touchStart(event,this)" ontouchmove="touchmove(event, this)" ontouchend='touchend(event, this, ["#drop6","#drop7","#drop8"], 3)'><img id="3" draggable="true" ondragstart="drag(event)" src="Images/puzzle-3.png"/></div>
+			<div id="puzzlebox4" ontouchstart="touchStart(event,this)" ontouchmove="touchmove(event, this)" ontouchend='touchend(event, this, ["#drop6","#drop7","#drop8"], 4)'><img id="4" draggable="true" ondragstart="drag(event)" src="Images/puzzle-4.png"/></div>
+			<div id="puzzlebox5" ontouchstart="touchStart(event,this)" ontouchmove="touchmove(event, this)" ontouchend='touchend(event, this, ["#drop2","#drop3","#drop6","#drop7","#drop8"], 5)'><img id="5" draggable="true" ondragstart="drag(event)" src="Images/puzzle-5.png"/></div>
+			<div id="puzzlebox6" ontouchstart="touchStart(event,this)" ontouchmove="touchmove(event, this)" ontouchend='touchend(event, this, ["#drop2","#drop3"], 6)'><img id="6" draggable="true" ondragstart="drag(event)" src="Images/puzzle-6.png"/></div>
+			<div id="puzzlebox7" ontouchstart="touchStart(event,this)" ontouchmove="touchmove(event, this)" ontouchend='touchend(event, this, ["#drop4","#drop5"], 7)'><img id="7" draggable="true" ondragstart="drag(event)" src="Images/puzzle-7.png"/></div>
+			<div id="puzzlebox8" ontouchstart="touchStart(event,this)" ontouchmove="touchmove(event, this)" ontouchend='touchend(event, this, ["#drop4","#drop5"], 8)'><img id="8" draggable="true" ondragstart="drag(event)" src="Images/puzzle-8.png"/></div>
+
 			
         </article>
 		 
@@ -69,110 +69,152 @@
         <article class="slides bg2" style=" overflow:hidden; background:url(Images/slide2.png) no-repeat" id="block2"></article>
            
   		 <script>
-			 
+			var dropbox;
+			var el;
+			var leftPx, topPx, initialX, initialY;
+			var offsetX, offsetY;
+			var frameOffsetX, frameOffsetY;
+
 			//Countpuzzleanswer
 			var count = 0;
 			var draggedItems = [];
 			var puzzleLocation = new Array(8).fill(0);
-			 
+
 			function drag(e) {
 				// save the id of the element being dragged
 				e.dataTransfer.setData("text", e.target.id);
-				}
+			}
+
 			function allowDrop(e){
-					e.preventDefault();
-				}
-			 
-//			function drop(e, allowId){
-//					e.preventDefault();
-//
-//					 var id = e.dataTransfer.getData("Text")
-//					 if (id==allowId) {
-//						 var droppedImg = document.getElementById(id);
-//						 e.target.appendChild(droppedImg);
-//						 count++;
-//						 
-//						 if(count == 8){
-//							 alert("Perfect !!!", "Click Ok to go to the Next Level");
-//							 setTimeout(function(){ window.location.href = 'Level-2.html'; }, 2000);
-//						 }
-//					 }
-//					 else {
-//						alert('Please Try Again');
-//					 }
-//		    	}
-			
-			 
-			 function drop(e, allowIds, dropLocation){
+				e.preventDefault();
+			}
+
+			function drop(e, allowIds, dropLocation){
 				e.preventDefault();
 				var updated = false;
 				var id = e.dataTransfer.getData("Text")
-					 
+
 				for (let i = 0; i < allowIds.length; i++) {
-  					if (id==allowIds[i]) {
-						
+					if (id==allowIds[i]) {
+
 						updated = true;
-						
+
 						if(!puzzleLocation.includes(dropLocation)){
 							puzzleLocation[id] = dropLocation;
 							var droppedImg = document.getElementById(id);
 							e.target.appendChild(droppedImg);
-						
+
 							if(!draggedItems.includes(id)){
 								draggedItems.push(id);
-						 		count++;
+								count++;
 
-						 		var elem = document.getElementById("barloading");
-						  		var width = count/8*100;
-						  		elem.style.width = width + '%';
-								
+								var elem = document.getElementById("barloading");
+								var width = count/8*100;
+								elem.style.width = width + '%';
+
 								if(count == 8){
-					 				//alert("Perfect !!!", "Click Ok to go to the Next Level");
-					 				setTimeout(function(){ $("#block2").fadeIn('fast'); }, 1000);
+									//alert("Perfect !!!", "Click Ok to go to the Next Level");
+									setTimeout(function(){ $("#block2").fadeIn('fast'); }, 1000);
 								}
 							}
 						} else {
 							swal("Please choose an empty spot.");
 						}
-						
+
 						break;
-					 }
+					}
 				}
-					
+
 				if(!updated){
-					swal("Oops! That doesn't seem to be the right spot.");
+					swal("Oops! Wrong spot.");
 				}
-					
-		    }
+
+			}
+
+			function touchStart(evt, puzzlebox){
+				el = evt.target;
+				leftPx = puzzlebox.getBoundingClientRect().left;
+				topPx = puzzlebox.getBoundingClientRect().top;
+				const touch = evt.touches[0];
+				offsetX = touch.clientX - puzzlebox.getBoundingClientRect().left;
+				offsetY = touch.clientY - puzzlebox.getBoundingClientRect().top;
+
+				frameOffsetX = document.querySelector("#frame").getBoundingClientRect().left;
+				frameOffsetY = document.querySelector("#frame").getBoundingClientRect().top;
+				// console.log(document.querySelector("#frame").getBoundingClientRect().left);
+			}
+
+			function touchmove(evt,puzzlebox){
+				evt.preventDefault();
+				const touch = evt.touches[0];
+				puzzlebox.style.zIndex=1;
+				var x = touch.clientX - offsetX - frameOffsetX;
+				var y = touch.clientY - offsetY - frameOffsetY;
+				puzzlebox.style.left = x + 'px';
+				puzzlebox.style.top = y + 'px';
+			}
+
+			function touchend(evt, puzzlebox, allowIds, currentId){
+				var updated = false;
+				puzzlebox.style.zIndex=0;
+
+				// Accessing touch coordinates in ontouchend
+				var touch = evt.changedTouches[0]; // Get the first changed touch
+				var dropX = touch.clientX;
+				var dropY = touch.clientY;
+
+				for (let i = 0; i < allowIds.length; i++) {
+					dropbox = document.querySelector(allowIds[i]);
+					var drp = dropbox.getBoundingClientRect();
+
+					var drpT = drp.top , drpL = drp.left , drpB = drp.bottom , drpR = drp.right ;
+
+					if(drpT < dropY && drpB > dropY && drpL < dropX && drpR > dropX){
+						updated = true;
+
+						if(!puzzleLocation.includes(allowIds[i])){
+							puzzleLocation[currentId] = allowIds[i];
+							drpT = drpT - frameOffsetY;
+							drpL = drpL - frameOffsetX;
+							puzzlebox.style.top=drpT+ 'px';
+							puzzlebox.style.left=drpL+ 'px';
+
+							if(!draggedItems.includes(currentId)){
+								draggedItems.push(currentId);
+								count++;
+
+								var elem = document.getElementById("barloading");
+								var width = count/8*100;
+								elem.style.width = width + '%';
+
+								if(count == 8){
+									setTimeout(function(){ $("#block2").fadeIn('fast'); }, 1000);
+								}
+							}
+						} else {
+							topPx = topPx - frameOffsetY;
+							leftPx = leftPx - frameOffsetX;
+							puzzlebox.style.top=topPx+ 'px';
+							puzzlebox.style.left=leftPx+ 'px';
+							swal("Please choose an empty spot.");
+						}
+						break;
+					}
+				}
+
+				if(!updated){
+					topPx = topPx - frameOffsetY;
+					leftPx = leftPx - frameOffsetX;
+					puzzlebox.style.top=topPx+ 'px';
+					puzzlebox.style.left=leftPx+ 'px';
+					// swal("Oops! That doesn't seem to be the right spot.");
+				}
+
+			}
 			 
+		 </script>
 
-			 // JavaScript code
-        function touchStart(event) {
-            const touch = event.touches[0];
-            offsetX = touch.clientX - puzzlebox1.getBoundingClientRect().left;
-            offsetY = touch.clientY - puzzlebox1.getBoundingClientRect().top;
-        }
-
-        function touchMove(event) {
-            event.preventDefault(); // Prevent default behavior to avoid scrolling
-
-            const touch = event.touches[0];
-            const x = touch.clientX - offsetX;
-            const y = touch.clientY - offsetY;
-
-            puzzlebox1.style.left = x + 'px';
-            puzzlebox1.style.top = y + 'px';
-        }
-
-  function allowDrop(event) {
-    event.preventDefault();
-  }
-			 
-		 </script> 
-		 
-		 
     </section>
 		
 	</body>
 </html>		
-		
